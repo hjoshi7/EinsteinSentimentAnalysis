@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="Sentiment Analysis">
+      <lightning-layout>
+        <lightning-layout-item size="12">
+          <lightning-input
+            label="Enter Text"
+            name="textInput"
+            value={textInput}
+            onchange={handleInputChange}
+          ></lightning-input>
+        </lightning-layout-item>
+        <lightning-layout-item size="12">
+          <lightning-button label="Analyze" onclick={analyzeText}></lightning-button>
+        </lightning-layout-item>
+        <lightning-layout-item size="12">
+            <div>"result"</div>
+          <div>{sentimentResult}</div>
+        </lightning-layout-item>
+      </lightning-layout>
+    </lightning-card>
+  </template>
+  
